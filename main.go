@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-
+	key := []byte("greet")
+	value := []byte("hello-world")
 	// Use Ledis's default config
 	cfg := lediscfg.NewConfigDefault()
 	l, _ := ledis.Open(cfg)
